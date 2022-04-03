@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>delaware FAST platform package</title>
+<link rel="stylesheet" th:href="@{/css/exstream.css}" />
+<script type="text/javascript" th:src="@{/js/exstream.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery-1.11.1.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery-ui.min.js}"></script>
+<link rel="stylesheet" th:href="@{/css/style.css}" />
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+<script  th:inline="javascript">
+
+$(document).ready(function() {
+setBindControls();
+});
+ 
+function setBindControls() {
+var Countries_serch  = /*[[${listProjects}]]*/'noValue';
+
+$('#casid').autocomplete({
+source: Countries_serch,
+minLength: 0,
+scroll: true
+}).focus(function() {
+$(this).autocomplete("search", "");
+});
+}
+</script>
+</head>
+	<body>
+			<a href="https://www.delawareconsulting.com/en-us"><img id="logo" th:src="@{/images/delaware.png}" alt="delaware"/></a>
+			<div class="ui-widget">
+					<div class="center" >
+						<input class="" readonly id="casid" type="text" placeholder="Select the project to delete..." />
+					    <button id="docsubmit" class="button"  th:onclick="submitRequest(getidvalue());">Submit</button>
+					</div>
+			</div>
+					<div id="resultsBlock"></div>
+					<div id="spinner" class="spinner" style="display:none;">
+					    <img id="img-spinner" th:src="@{/images/spinner.gif}" alt="Loading"/>
+					</div>
+					<div id="dialog-confirm-submit" title="Delete projects from CAS" style="display:none;">
+					  <p><span style="float:left; margin:12px 12px 20px 0;"></span>Do you want to delete the selected project from CAS? <Br> <b>Note: </b>Once done, this cannot be undone.</p>
+					</div>
+					<div id="dialog-confirm" title="Delete projects from CAS" style="display:none;">
+					  <p><span style="float:left; margin:12px 12px 20px 0;"></span>Project successfully deleted from CAS. Select a new project or close the tab.</p>
+					</div>
+					
+					<div id="dialog" title="Blank input alert dialog" style="display:none;">
+					  <p>Input can not be left blank.</p>
+					</div>
+
+	</body>
+</html>

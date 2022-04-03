@@ -1,0 +1,158 @@
+.ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    display: none;
+    min-width: 160px;   
+    padding: 4px 0;
+    margin: 0 0 10px 25px;
+    list-style: none;
+    background-color: #ffffff;
+    border-color: #ccc;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+}
+
+.ui-menu-item > a.ui-corner-all {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: #555555;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.ui-state-hover, .ui-state-active {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0088cc;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    background-image: none;
+}
+.ui-textfield {
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    outline: none;
+}
+#logo {
+  display: inline-block;
+  margin: 15px; /* margin: 20px was off */
+  height: 60px;
+  float: right;
+  width: auto; /* correct proportions to specified height */
+  border-radius: 50%; /* makes it a circle */
+}
+input[type=text] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f8f8f8;
+}
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
+.wrapper {
+    text-align: right;
+}
+
+.button {
+  background-color: #001a33;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px; /* half width of the spinner gif */
+    margin-top: -50px; /* half height of the spinner gif */
+    text-align:center;
+    z-index:1234;
+    overflow: auto;
+    width: 100px; /* width of the spinner gif */
+    height: 102px; /*hight of the spinner gif +2px to fix IE8 issue */
+}
+
+@font-face {
+  font-family: DejaVuSerif;
+  src: url("../download/DejaVuSerif.eot");
+  src: local('☺'), local('Dejavu Serif'), url("../download/DejaVuSerif.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: DejaVuSerif;
+  src: url("../download/DejaVuSerif-Italic.eot");
+  src: local('☺'), local('Dejavu Serif Italic'), url("../download/DejaVuSerif-Italic.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: DejaVuSerif;
+  src: url("../download/DejaVuSerif-Bold.eot");
+  src: local('☺'), local('Dejavu Serif Bold'), url("../download/DejaVuSerif-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: DejaVuSerif;
+  src: url("../download/DejaVuSerif-BoldItalic.eot");
+  src: local('☺'), local('Dejavu Serif Bold Italic'), url("../download/DejaVuSerif-BoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: DejaVuSansCondensed;
+  src: url("../download/DejaVuSansCondensed.eot");
+  src: local('☺'), local('Dejavu Sans Condensed'), url("../download/DejaVuSansCondensed.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: DejaVuSansCondensed;
+  src: url("../download/DejaVuSansCondensed-Bold.eot");
+  src: local('☺'), local('Dejavu Sans Condensed Bold'), url("../download/DejaVuSansCondensed-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: DejaVuSansMono;
+  src: url("../download/DejaVuSansMono.eot");
+  src: local('☺'), local('Dejavu Sans Mono'), url("../download/DejaVuSansMono.ttf") format("truetype");
+}
